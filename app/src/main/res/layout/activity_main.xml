@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android_ul.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_btn"
+        android:textAllCaps="false"
+        android:layout_margin="5dp"
+
+        android:text="Button颜色变化"/>
+
+    <Button
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:background="@drawable/shape2"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:text="图形资源"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/shape3"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:textAllCaps="false"
+            android:id="@+id/btn11"
+            android:text="图形资源"/>
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="100dp"
+            android:layout_toLeftOf="@id/btn11"
+            android:background="@drawable/shape4"
+            android:layout_margin="5dp"
+            android:textAllCaps="false"
+            android:text="图形资源"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/btn11"
+            android:background="@drawable/shape4"
+            android:layout_margin="5dp"
+            android:textAllCaps="false"
+            android:text="图形资源"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@id/btn11"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="100dp"
+                android:layout_toLeftOf="@id/btn11"
+                android:background="@drawable/shape4"
+                android:layout_marginRight="25dp"
+                android:textAllCaps="false"
+                android:text="图形资源"/>
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="100dp"
+                android:layout_toLeftOf="@id/btn11"
+                android:background="@drawable/shape4"
+                android:textAllCaps="false"
+                android:text="图形资源"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape5"/>
+</LinearLayout>
